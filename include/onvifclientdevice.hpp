@@ -103,8 +103,8 @@ private:
 	string m_strEvent;
 	DeviceBindingProxy deviceBindProxy;
 
-	double OnvifClientDevice::findDiffTime(struct tm local_sys,tt__DateTime cameraTime,bool isDST);
-	int OnvifClientDevice::LocalAddUsernameTokenDigest(struct soap *soapOff,double cam_pc_offset);
+        double findDiffTime(struct tm local_sys,tt__DateTime cameraTime,bool isDST);
+        int LocalAddUsernameTokenDigest(struct soap *soapOff,double cam_pc_offset);
 };
 
 int OnvifClientDevice::GetHostname(_tds__GetHostnameResponse &GetHostnameResponse)
